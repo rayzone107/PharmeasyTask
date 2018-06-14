@@ -31,6 +31,15 @@
                 android:layout_marginTop="20dp"
                 android:src="@mipmap/ic_launcher" />
 
+            <ImageView
+                android:id="@+id/friends_iv"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"
+                app:srcCompat="@drawable/ic_hand_shake" />
+
             <TextView
                 android:id="@+id/name_tv"
                 android:layout_width="wrap_content"
@@ -90,8 +99,9 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="6dp"
+                        android:layout_marginTop="4dp"
                         android:text="@string/followers"
+                        android:textColor="@color/profession_gray"
                         android:textSize="12sp" />
 
                 </LinearLayout>
@@ -120,8 +130,9 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="6dp"
+                        android:layout_marginTop="4dp"
                         android:text="@string/following"
+                        android:textColor="@color/profession_gray"
                         android:textSize="12sp" />
                 </LinearLayout>
 
@@ -149,8 +160,9 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="6dp"
+                        android:layout_marginTop="4dp"
                         android:text="@string/purchases"
+                        android:textColor="@color/profession_gray"
                         android:textSize="12sp" />
                 </LinearLayout>
 

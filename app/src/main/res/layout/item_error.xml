@@ -2,7 +2,6 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
@@ -12,28 +11,19 @@
         android:id="@+id/error_lav"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@id/image_iv"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
+        app:lottie_scale="1.5"
         app:lottie_rawRes="@raw/error_message"
         app:lottie_repeatMode="restart" />
-
-    <ImageView
-        android:id="@+id/error_image_iv"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="80dp"
-        android:contentDescription="@string/error_image"
-        android:visibility="invisible"
-        tools:src="@mipmap/ic_launcher" />
 
     <TextView
         android:id="@+id/error_title_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/error_image_iv"
+        android:layout_below="@id/error_lav"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
         android:gravity="center"

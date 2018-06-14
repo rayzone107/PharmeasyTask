@@ -1,16 +1,19 @@
 package com.rachitgoyal.pharmeasytask.models;
 
 import com.google.gson.annotations.SerializedName;
-
-import java.io.Serializable;
+import com.orm.dsl.Table;
 
 /**
  * Created by Rachit Goyal on 13/06/18
  */
 
-public class User implements Serializable {
+@Table
+public class User {
 
-	private int id;
+	private transient Long id;
+
+	@SerializedName("id")
+	private int userId;
 
 	@SerializedName("first_name")
 	private String firstName;
@@ -25,19 +28,13 @@ public class User implements Serializable {
 	private int followers;
 	private int following;
 	private int purchases;
+	private boolean isFriend = false;
 
 	public User() {
 	}
 
-	public User(int id, String firstName, String lastName, String imageUrl) {
-		this.id = id;
-		this.firstName = firstName;
-		this.lastName = lastName;
-		this.imageUrl = imageUrl;
-	}
-
-	public User(int id, String firstName, String lastName, String imageUrl, String profession, int followers, int following, int purchases) {
-		this.id = id;
+	public User(int userId, String firstName, String lastName, String imageUrl, String profession, int followers, int following, int purchases) {
+		this.userId = userId;
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.imageUrl = imageUrl;
@@ -47,12 +44,12 @@ public class User implements Serializable {
 		this.purchases = purchases;
 	}
 
-	public int getId() {
-		return id;
+	public int getUserId() {
+		return userId;
 	}
 
-	public void setId(int id) {
-		this.id = id;
+	public void setUserId(int userId) {
+		this.userId = userId;
 	}
 
 	public String getFirstName() {
@@ -109,5 +106,13 @@ public class User implements Serializable {
 
 	public void setPurchases(int purchases) {
 		this.purchases = purchases;
+	}
+
+	public boolean isFriend() {
+		return isFriend;
+	}
+
+	public void setFriend(boolean friend) {
+		isFriend = friend;
 	}
 }

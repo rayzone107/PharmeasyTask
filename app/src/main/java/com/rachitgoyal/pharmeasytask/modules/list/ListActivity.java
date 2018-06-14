@@ -139,6 +139,7 @@ public class ListActivity extends BaseActivity implements ListContract.View, Lis
 	@Override
 	public void showError(ErrorState errorState) {
 		mErrorLav.setAnimation(errorState.getErrorLottieResId());
+		mErrorLav.playAnimation();
 		mErrorTitleTV.setText(errorState.getErrorTitleResId());
 		mErrorMessageTV.setText(errorState.getErrorMessageResId());
 		mErrorButton.setVisibility(errorState.isShowRetry() ? View.VISIBLE : View.GONE);
@@ -154,7 +155,7 @@ public class ListActivity extends BaseActivity implements ListContract.View, Lis
 	@Override
 	public void onItemClick(User user, CircleImageView sharedImageView) {
 		Intent intent = new Intent(ListActivity.this, DetailActivity.class);
-		intent.putExtra(Constants.EXTRAS.USER_EXTRA, user);
+		intent.putExtra(Constants.EXTRAS.USER_ID_EXTRA, user.getUserId());
 		intent.putExtra(Constants.EXTRAS.IMAGE_TRANSITION_NAME, ViewCompat.getTransitionName(sharedImageView));
 		ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(
 				this,

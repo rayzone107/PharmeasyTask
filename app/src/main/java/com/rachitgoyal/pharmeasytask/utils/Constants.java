@@ -9,7 +9,7 @@ public class Constants {
 	public static final String[] professionList = {"Doctor", "Engineer", "Pilot", "Chef", "Model", "Actor", "Driver", "Sales Person", "Soldier", "Teacher"};
 
 	public interface EXTRAS {
-		String USER_EXTRA = "USER_EXTRA";
+		String USER_ID_EXTRA = "USER_ID_EXTRA";
 		String IMAGE_TRANSITION_NAME = "IMAGE_TRANSITION_NAME";
 	}
 

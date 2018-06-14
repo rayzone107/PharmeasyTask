@@ -1,5 +1,6 @@
 package com.rachitgoyal.pharmeasytask.modules.list;
 
+import com.orm.SugarRecord;
 import com.rachitgoyal.pharmeasytask.models.User;
 import com.rachitgoyal.pharmeasytask.models.UserResponse;
 import com.rachitgoyal.pharmeasytask.utils.Constants;
@@ -53,6 +54,7 @@ public class ListPresenter implements ListContract.Presenter {
 						}
 						mCurrentPage++;
 						userResponse = generateRawData(userResponse);
+
 						if (userResponse.getData().isEmpty()) {
 							mView.showNoMoreResults();
 						} else {
@@ -93,6 +95,7 @@ public class ListPresenter implements ListContract.Presenter {
 			user.setFollowers(random.nextInt(200));
 			user.setFollowing(random.nextInt(200));
 			user.setPurchases(random.nextInt(500));
+			SugarRecord.save(user);
 		}
 		return userResponse;
 	}

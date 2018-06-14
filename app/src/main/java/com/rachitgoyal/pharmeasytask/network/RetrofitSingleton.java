@@ -21,7 +21,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
  * Created by Rachit Goyal on 13/06/18
  */
 
-public class RetrofitSingleton {
+class RetrofitSingleton {
 
 	private static final String BASE_URL = "https://reqres.in/api/";
 	private static final int TIMEOUT = 30;
@@ -34,7 +34,7 @@ public class RetrofitSingleton {
 		}
 	}
 
-	public static Retrofit getInstance(Context context) {
+	static Retrofit getInstance(Context context) {
 		if (mRetrofit == null) {
 			mRetrofit = new Retrofit.Builder()
 					.baseUrl(BASE_URL)

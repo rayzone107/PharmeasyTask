@@ -9,11 +9,16 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label=""
+        android:name="com.orm.SugarApp"
+        android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:label">
+
+        <meta-data android:name="DATABASE" android:value="pharmeasy_task.db" />
+        <meta-data android:name="VERSION" android:value="2" />
+
         <activity
             android:name=".modules.list.ListActivity"
             android:label="@string/app_name"
