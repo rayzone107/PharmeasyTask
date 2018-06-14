@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="profession_gray">#ababab</color>
+    <color name="error_gray">#797979</color>
+    <color name="divider_gray">#d9d9d9</color>
+    <color name="error_red">#c20606</color>
+    <color name="name_red">#f46565</color>
+    <color name="pharmeasy_color">#1b8e6e</color>
+</resources>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Pharmeasy Task</string>
+    <string name="user_image">User Image</string>
+    <string name="try_again">Try Again</string>
+    <string name="error_image">Error Image</string>
+    <string name="oh_snap">Oh Snap!</string>
+    <string name="no_internet_error_message">Your internet connection seems to be on the run, and unless you catch it, we can\'t do much for you.</string>
+    <string name="oops_something_went_wrong">OOPS! Something went wrong!</string>
+    <string name="something_went_wrong_error_message">While we figure out what that is, and fix it for you, why don\'t you take a break.</string>
+    <string name="title_activity_detail">DetailActivity</string>
+    <string name="add_as_friend">Add as friend</string>
+    <string name="followers">Followers</string>
+    <string name="following">Following</string>
+    <string name="purchases">Purchases</string>
+</resources>
